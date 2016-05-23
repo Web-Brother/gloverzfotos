@@ -1,5 +1,7 @@
 <?php 
 
+show_admin_bar(false);
+
 function learningWordPress_resources() {
 
 	wp_enqueue_style('style', get_stylesheet_uri());

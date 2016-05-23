@@ -6,9 +6,105 @@ Author URI: www.gloverzfotos.com
 Version: 1.0
 
 */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
-  background-color: white !important;
+/* Color Palette */
+/* Media queries */
+/* Site Nav Bar */
+div.header-navigation {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  border: none;
+  /* Mobile styles */
 }
+div.header-navigation div.navbar-header a.navbar-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  height: auto;
+  padding: 5px 10px;
+  color: white;
+}
+div.header-navigation div.navbar-header a.navbar-brand text.fotos {
+  color: red;
+}
+div.header-navigation div.navbar-collapse {
+  padding: 0;
+}
+div.header-navigation div.navbar-collapse ul.navbar-nav li a,
+div.header-navigation div.navbar-collapse ul.navbar-nav li a:visited {
+  color: white;
+}
+div.header-navigation div.navbar-collapse ul.navbar-nav li a {
+  transition: .5s;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+div.header-navigation div.navbar-collapse ul.navbar-nav li a:hover {
+  background: none;
+  color: red;
+}
+@media (max-width: 767px) {
+  div.header-navigation div.navbar-header {
+    padding: 4px 0 10px 0;
+  }
+  div.header-navigation div.navbar-header a.navbar-brand {
+    padding: 8px 0;
+  }
+  div.header-navigation div.navbar-header button.navbar-toggle {
+    border: none;
+  }
+  div.header-navigation div.navbar-header button.navbar-toggle:hover {
+    background: none !important;
+  }
+  div.header-navigation div.navbar-header button.navbar-toggle.collapsed {
+    margin: 0;
+    background: none !important;
+  }
+  div.header-navigation div.navbar-collapse {
+    border-top: 1px solid #bfbfbf;
+  }
+}
+/* End of Site Nav Bar */
+/* CTA Styles */
+.btn.btn-booknow {
+  background-color: #e93d3d;
+  transition: .5s;
+  padding: 5px 10px;
+}
+.btn.btn-booknow:hover {
+  background-color: white !important;
+  border: 1px solid #e93d3d !important;
+  color: #e93d3d !important;
+}
+/* End of CTA Styles */
+/* Carousel */
+#heroCarousel.carousel {
+  height: 550px;
+}
+#heroCarousel.carousel .carousel-caption {
+  height: 180px;
+  font-size: 24px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#heroCarousel.carousel .carousel-caption h4 {
+  font-size: 60px;
+}
+#heroCarousel.carousel .item {
+  height: 550px;
+  background-size: cover !important;
+}
+#heroCarousel.carousel #slide1 {
+  background: url('resources/images/carousel/carousel_medium_01.jpg') center center no-repeat;
+}
+#heroCarousel.carousel #slide2 {
+  background: url('resources/images/carousel/carousel_medium_02.jpg') center center no-repeat;
+}
+#heroCarousel.carousel #slide3 {
+  background: url('resources/images/carousel/carousel_medium_03.jpg') center center no-repeat;
+}
+/* End of Carousel */
