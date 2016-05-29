@@ -44,8 +44,16 @@
 		</ol>
 
 		<div class="carousel-caption">
-			<h4>INSERT TITLE HERE</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id.</p> 
+			<h4>Focus. Capture. Develop.</h4>
+			<p>Our passion is seeing people at their best light <text class="hidden-xs"><br></text> and keeping the memories for treasure.</p>
+			<div class="row ghost-button-container">
+				<div class="col-lg-6">
+					<a class="btn btn-gb watch-video">Watch Video</a>
+				</div>
+				<div class="col-lg-6">
+					<a class="btn btn-gb book-now">Book Now</a>
+				</div>
+			</div>
 		</div>
 
 		<!-- Wrapper for slides -->
@@ -59,9 +67,7 @@
 		</div>
 
 		<!-- Controls -->
-		<a class="left carousel-control" data-slide="prev" href="#heroCarousel "><span class="icon-prev"></span></a>
-		<a class="right carousel-control" data-slide="next" href="#heroCarousel "><span class="icon-next"></span></a>
+		<a class="left carousel-control hidden-xs" data-slide="prev" href="#heroCarousel "><span class="icon-prev"></span></a>
+		<a class="right carousel-control hidden-xs" data-slide="next" href="#heroCarousel "><span class="icon-next"></span></a>
 
 	</div>
-
-     <div class="container">

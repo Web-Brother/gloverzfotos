@@ -12,6 +12,8 @@ add_action('wp_enqueue_scripts','learningWordPress_resources');
 
 function js_files() {
 	wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/vendors/bootstrap/js/bootstrap.min.js', array('jquery'), '', true);
+	// wp_enqueue_script('smoothscroll_js', get_template_directory_uri() . '/vendors/smooth-scroll.js', array('jquery'), '', true);
+	wp_enqueue_script('parallax_js', get_template_directory_uri() . '/vendors/parallax.min.js', array('jquery'), '', true);
 }
 
 add_action('wp_enqueue_scripts','js_files');

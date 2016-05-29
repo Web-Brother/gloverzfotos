@@ -9,12 +9,23 @@ Version: 1.0
 
 @import "bootstrap-variables.less";
 @import "variables.less";
+@import "font.less";
+
+body {
+	background-color: #f6f6f6 !important;
+}
+
+/* General Styles */
+div.centered {
+	text-align: center;
+}
+/* End of General Styles */
 
 /* Site Nav Bar */
 
 div.header-navigation {
 	padding: 10px 20px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 0;
 	border: none;
 
@@ -42,6 +53,7 @@ div.header-navigation {
 					color: white;
 				}
 				a {
+					font-family: 'Proxima Nova', Sans-Serif !important;
 					transition: .5s;
 					text-transform: uppercase;
 					padding: 5px 20px;
@@ -58,7 +70,16 @@ div.header-navigation {
 	}
 
 	/* Mobile styles */
+	@media @max-tablet {
+		div.navbar-collapse {
+			ul.navbar-nav {
+				margin-right: 0;
+			}
+		}
+	}
 	@media @max-mobile {
+
+		background-color: rgba(0, 0, 0, 0.5);
 
 		div.navbar-header {
 
@@ -94,14 +115,29 @@ div.header-navigation {
 /* CTA Styles */
 
 .btn {
+	transition: .5s;
+
 	&.btn-booknow {
 		background-color: @secondary-color;
-		transition: .5s;
 		padding: 5px 10px;
+		font-family: 'Proxima Nova', Sans-Serif !important;
 		&:hover {
-			background-color: white !important;
-			border: 1px solid @secondary-color !important;
-			color: @secondary-color !important;
+			background-color: #ed6363 !important;
+			color: white !important;
+		}
+	}
+	&.btn-services {
+		color: @secondary-color;
+		border: 1px solid @secondary-color;
+		width: 100%;
+		max-width: 200px;
+		padding: 10px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'Proxima Nova', Sans-Serif !important;
+		&:hover {
+			background: @secondary-color;
+			color: white;
 		}
 	}
 }
@@ -112,33 +148,260 @@ div.header-navigation {
 
 #heroCarousel.carousel {
 
-	height: 550px;
+	height: 600px;
+
+	ol.carousel-indicators {
+		> li {
+			border: 1px solid @secondary-color;
+			&.active {
+				background-color: @secondary-color;
+			}
+		}
+	}
+
+	a.carousel-control {
+		> span {
+			color: @secondary-color;
+		}
+	}
 
 	.carousel-caption {
-		height: 180px;
+		height: 260px;
 		font-size: 24px;
+		right: 10%;
+		left: 10%;
 		top: 0;
 		bottom: 0;
 		margin: auto;
 		h4 {
 			font-size: 60px;
+			margin-bottom: 20px;
+			margin-top: 0;
+			line-height: 60px;
+			font-family: 'Proxima Nova', Sans-Serif !important;
+		}
+		p {
+			margin-bottom: 20px;
+			font-family: 'Proxima Nova', Sans-Serif !important;
+		}
+		div.ghost-button-container {
+			max-width: 400px;
+			width: 100%;
+			margin: auto;
+
+			> div {
+				padding: 0 10px;
+			}
+
+			.btn {
+				padding: 10px;
+				transition: .5s;
+				margin-bottom: 10px;
+				font-family: 'Proxima Nova', Sans-Serif !important;
+				&.btn-gb {
+					width: 100%;
+					max-width: 220px;
+					text-transform: uppercase;
+					font-weight: bold;
+					&.book-now {
+						background: @secondary-color;
+						color: white;
+						&:hover {
+							background: #ed6363;
+						}
+					}
+					&.watch-video {
+						background: none;
+						color: white;
+						border: 1px solid white;
+
+						&:hover {
+							color: @secondary-color;
+							background: white;
+						}
+					}
+				}
+
+			}
 		}
 	}
 
 	.item {
-	   height: 550px;
+	   height: 600px;
 	   background-size: cover !important;
 	}
 
 	#slide1 {
-	   background: url('resources/images/carousel/carousel_medium_01.jpg') center center no-repeat;
+	   background: url('resources/images/carousel/carousel_medium_01.jpg') no-repeat;
 	}
 	#slide2 {
-	   background: url('resources/images/carousel/carousel_medium_02.jpg') center center no-repeat;
+	   background: url('resources/images/carousel/carousel_medium_02.jpg') no-repeat;
 	}
 	#slide3 {
-	   background: url('resources/images/carousel/carousel_medium_03.jpg') center center no-repeat;
+	   background: url('resources/images/carousel/carousel_medium_03.jpg') no-repeat;
+	}
+
+	/* Moile Styles */
+	@media @max-tablet {
+		.carousel-caption {
+			height: 300px;
+			h4 {
+				font-size: 40px;
+				line-height: 40px;
+			}
+			p {
+				font-size: 24px;
+			}
+		}
+	}
+	@media @max-mobile {
+
+		height: 400px;
+
+		ol.carousel-indicators {
+			> li {
+				width: 9px;
+				height: 9px;
+
+				&.active {
+					margin: 1px;
+				}
+			}
+		}
+
+		.carousel-caption {
+			height: 246px;
+			h4 {
+				font-size: 28px;
+				line-height: 28px;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+		.item {
+			height: 400px;
+			background-position: center center !important;
+		}
 	}
 }
 
 /* End of Carousel */
+
+/* Container */
+
+div.container {
+	&.content {
+		padding: 120px 20px 120px 20px;
+
+		h1 {
+			margin: 0 0 10px 0 !important;
+			font-size: 36px;
+			/*text-transform: uppercase;*/
+			font-weight: bold;
+			font-family: 'Proxima Nova', Sans-Serif !important;
+		}
+		p.subtitle {
+			font-family: 'Proxima Nova', Sans-Serif !important;
+			font-size: 20px;
+			margin-bottom: 60px;
+		}
+	}
+
+	@media @max-mobile {
+		&.content {
+			padding: 30px 10px;
+			h1 {
+				font-size: 24px;
+			}
+			p.subtitle {
+				font-size: 16px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+div.parallax-window {
+    min-height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+
+    div.content {
+    	h1, p {
+    		color: white;
+    	}
+    }
+}
+
+/* End of Container */
+
+/* Cards */
+div.categories {
+	> div {
+		margin-bottom: 30px;
+	}
+
+	div.card {
+		background: white;
+	    padding: 10px;
+	    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+	    margin-bottom: 30px;
+	    div.photo {
+	    	background: #818181;
+    		height: 220px;
+	    }
+	    div.title {
+	    	line-height: 40px;
+	    	text-align: center;
+		    padding: 10px 0 0 0;
+		    font-size: 40px;
+    		font-weight: bold;
+		    font-family: 'alwaysForever', Sans-Serif;
+	    }
+	}
+	p {
+		font-size: 18px;
+		font-family: 'Proxima Nova', Sans-Serif !important;
+		a, a:visited {
+			font-family: 'Proxima Nova', Sans-Serif !important;
+			text-decoration: none;
+			color: @secondary-color;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	@media @max-mobile {
+		margin-right: 0;
+		margin-left: 0;
+		div.card {
+			margin-bottom: 15px;
+			div.title {
+				font-size: 30px;
+			}
+		}
+		p {
+			font-size: 14px !important;
+			margin-bottom: 0;
+		}
+	}
+}
+/* End of Cards */
+
+/* Demo Reel */
+.demoreel {
+	padding: 20px;
+	background: white;
+
+	@media @max-tablet {
+		width: 100%;
+	}
+	@media @max-mobile {
+		padding: 10px;
+		height: 240px;
+	}
+}
+/* End of Demo Reel */
