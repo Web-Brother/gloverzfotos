@@ -12,28 +12,28 @@
 				<div class="photo"><!-- image --></div>
 				<div class="title">Life Events</div>
 			</div>
-			<p>Nulla ultricies, elit non mattis interdum, erat quam interdum libero, sed aliquet lorem ante id est. <a href="#">Read more</a></p>
+			<p>Please check out several of our Wedding coverage. We also take Debut, Christening and any Special events that we ensure best quality. <a href="#">Read more</a></p>
 		</div>
 		<div class="col-lg-3 col-sm-6 col-xs-12">
 			<div class="card">
 				<div class="photo"><!-- image --></div>
 				<div class="title">Portrait</div>
 			</div>
-			<p>Maecenas mollis arcu tellus, id fermentum purus sodales eget.  Nunc a gravida neque, non laoreet purus. <a href="#">Read more</a></p>
+			<p>Portrait is to display personality, even the character of a person. So for personal or Modeling, Maternity and New born Angels, We can serve and help you, Its our passion.  <a href="#">Read more</a></p>
 		</div>
 		<div class="col-lg-3 col-sm-6 col-xs-12">
 			<div class="card">
 				<div class="photo"><!-- image --></div>
 				<div class="title">Corporate Events</div>
 			</div>
-			<p>Phasellus dictum arcu lacus, vitae molestie felis sodales eget. Nunc a gravida neque, non laoreet purus. <a href="#">Read more</a></p>
+			<p>Preparing for Conventions, Presentations, Recognitions, or office gatherings/parties? Our team is equipped and ready. We'll get it covered without a miss.  <a href="#">Read more</a></p>
 		</div>
 		<div class="col-lg-3 col-sm-6 col-xs-12">
 			<div class="card">
 				<div class="photo"><!-- image --></div>
 				<div class="title">School Events</div>
 			</div>
-			<p>Morbi dictum aliquam quam, et tincidunt lorem sollicitudin quis. Nunc vestibulum placerat tortor, ac semper elit. <a href="#">Read more</a></p>
+			<p>We love helping students, with student friendly offers.  We assist on school projects, school events and any school happenings!  <a href="#">Read more</a></p>
 		</div>
 	</div>
 	<!-- end of cards -->
@@ -44,13 +44,52 @@
 <!-- end of categories -->
 
 <!-- demo reel -->
-<div class="parallax-window" data-parallax="scroll" data-image-src="">
+<div class="parallax-window" data-parallax="scroll" data-image-src="<?php bloginfo('template_directory'); ?>/resources/images/sample.jpg">
 	<div class="container content centered">
 		<h1>Demo Reel</h1>
 		<p class="subtitle">How we love to share to you our earlier works and commitments</p>
-		<iframe src="https://player.vimeo.com/video/167373612" class="demoreel" width="840" height="560" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+		<iframe src="https://player.vimeo.com/video/167373612" class="demoreel" width="720" height="460" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
 	</div>
 </div>
 <!-- end of demo reel -->
+
+<!-- about us -->
+<div class="container content">
+	<div class="details">
+		<div class="content-header centered">  
+			<h1>About our team</h1>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a vulputate justo. Proin pulvinar urna nec vulputate eleifend. Nulla facilisi. Ut euismod in nisl quis fermentum. Donec pretium massa eget sapien fringilla mollis. In at auctor nibh, id sollicitudin arcu. Vivamus sem felis, aliquam vitae magna a, suscipit aliquet massa.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a vulputate justo. Proin pulvinar urna nec vulputate eleifend. Nulla facilisi. Ut euismod in nisl quis fermentum. Donec pretium massa eget sapien fringilla mollis. In at auctor nibh, id sollicitudin arcu. Vivamus sem felis, aliquam vitae magna a, suscipit aliquet massa.</p>
+	</div>
+	<div class="details">
+		<div class="content-header centered">  
+			<h1>Why trust us?</h1>
+		</div>
+		<div class="row categories centered">
+			<div class="col-lg-3 col-sm-6 transp">
+				<div class="icon round img-circle affordable">&nbsp;</div>
+				<div class="title">Affordable</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec faucibus nulla ulcorper leo posue resodales.</p>
+			</div>
+			<div class="col-lg-3 col-sm-6 transp">
+				<div class="icon round img-circle fast-delivery">&nbsp;</div>
+				<div class="title">Fast Delivery</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec faucibus nulla ulcorper leo posue resodales.</p>
+			</div>
+			<div class="col-lg-3 col-sm-6 transp">
+				<div class="icon round img-circle creative">&nbsp;</div>
+				<div class="title">Creative</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec faucibus nulla ulcorper leo posue resodales.</p>
+			</div>
+			<div class="col-lg-3 col-sm-6 transp">
+				<div class="icon round img-circle quality-equipments">&nbsp;</div>
+				<div class="title">Quality Equipments</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec faucibus nulla ulcorper leo posue resodales.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /about us -->
 
 <?php get_footer(); ?>

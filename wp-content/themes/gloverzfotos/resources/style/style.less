@@ -149,6 +149,8 @@ div.header-navigation {
 #heroCarousel.carousel {
 
 	height: 600px;
+	height: ~'-webkit-calc(100vh - 149px)';
+    height: ~'calc(100vh - 149px)';
 
 	ol.carousel-indicators {
 		> li {
@@ -227,8 +229,10 @@ div.header-navigation {
 	}
 
 	.item {
-	   height: 600px;
-	   background-size: cover !important;
+		height: 600px;
+		height: ~'-webkit-calc(100vh - 149px)';
+		height: ~'calc(100vh - 149px)';
+	    background-size: cover !important;
 	}
 
 	#slide1 {
@@ -256,7 +260,7 @@ div.header-navigation {
 	}
 	@media @max-mobile {
 
-		height: 400px;
+		min-height: 400px;
 
 		ol.carousel-indicators {
 			> li {
@@ -280,7 +284,7 @@ div.header-navigation {
 			}
 		}
 		.item {
-			height: 400px;
+			min-height: 400px;
 			background-position: center center !important;
 		}
 	}
@@ -297,7 +301,7 @@ div.container {
 		h1 {
 			margin: 0 0 10px 0 !important;
 			font-size: 36px;
-			/*text-transform: uppercase;*/
+			text-transform: uppercase;
 			font-weight: bold;
 			font-family: 'Proxima Nova', Sans-Serif !important;
 		}
@@ -305,6 +309,29 @@ div.container {
 			font-family: 'Proxima Nova', Sans-Serif !important;
 			font-size: 20px;
 			margin-bottom: 60px;
+		}
+
+		div.content-header {
+			padding-bottom: 30px;
+			h1 {
+				margin: 0 !important;
+			}
+		}
+
+		p {
+			font-family: 'Proxima Nova', Sans-Serif !important;
+			font-size: 18px;
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		div.details {
+			margin-bottom: 60px;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -317,6 +344,9 @@ div.container {
 			p.subtitle {
 				font-size: 16px;
 				margin-bottom: 30px;
+			}
+			> p {
+				font-size: 14px;
 			}
 		}
 	}
@@ -361,6 +391,46 @@ div.categories {
 		    font-family: 'alwaysForever', Sans-Serif;
 	    }
 	}
+
+	div.transp {
+		margin-top: 20px;
+		padding: 0 20px;
+		div.icon {
+			background-size: contain;
+			background-repeat: no-repeat;
+			&.round {
+				height: 120px;
+				width: 120px;
+				background-color: #323232;
+				background-size: initial;
+				background-position: center;
+				margin: 0 auto 20px auto;
+				&.affordable {
+					background-image: url("resources/images/affordable.png");
+				}
+				&.fast-delivery {
+					background-image: url("resources/images/fast-delivery.png");
+				}
+				&.creative {
+					background-image: url("resources/images/creative.png");
+				}
+				&.quality-equipments {
+					background-image: url("resources/images/quality-equipments.png");
+				}
+				&.finance-economic {
+					background-image: url("../images/landing-page/finance-economic.png");
+				}
+			}
+		}
+		div.title {
+			color: @secondary-color;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+	}
+
 	p {
 		font-size: 18px;
 		font-family: 'Proxima Nova', Sans-Serif !important;
@@ -377,6 +447,9 @@ div.categories {
 	@media @max-mobile {
 		margin-right: 0;
 		margin-left: 0;
+		> div {
+			padding: 0 !important;
+		}
 		div.card {
 			margin-bottom: 15px;
 			div.title {
@@ -387,13 +460,16 @@ div.categories {
 			font-size: 14px !important;
 			margin-bottom: 0;
 		}
+		div.transp {
+			margin-top: 0;
+		}
 	}
 }
 /* End of Cards */
 
 /* Demo Reel */
 .demoreel {
-	padding: 20px;
+	padding: 10px;
 	background: white;
 
 	@media @max-tablet {

@@ -134,6 +134,8 @@ div.header-navigation div.navbar-collapse ul.navbar-nav li a:hover {
 /* Carousel */
 #heroCarousel.carousel {
   height: 600px;
+  height: -webkit-calc(100vh - 149px);
+  height: calc(100vh - 149px);
   /* Moile Styles */
 }
 #heroCarousel.carousel ol.carousel-indicators > li {
@@ -203,6 +205,8 @@ div.header-navigation div.navbar-collapse ul.navbar-nav li a:hover {
 }
 #heroCarousel.carousel .item {
   height: 600px;
+  height: -webkit-calc(100vh - 149px);
+  height: calc(100vh - 149px);
   background-size: cover !important;
 }
 #heroCarousel.carousel #slide1 {
@@ -228,7 +232,7 @@ div.header-navigation div.navbar-collapse ul.navbar-nav li a:hover {
 }
 @media (max-width: 767px) {
   #heroCarousel.carousel {
-    height: 400px;
+    min-height: 400px;
   }
   #heroCarousel.carousel ol.carousel-indicators > li {
     width: 9px;
@@ -248,7 +252,7 @@ div.header-navigation div.navbar-collapse ul.navbar-nav li a:hover {
     font-size: 14px;
   }
   #heroCarousel.carousel .item {
-    height: 400px;
+    min-height: 400px;
     background-position: center center !important;
   }
 }
@@ -260,7 +264,7 @@ div.container.content {
 div.container.content h1 {
   margin: 0 0 10px 0 !important;
   font-size: 36px;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
   font-weight: bold;
   font-family: 'Proxima Nova', Sans-Serif !important;
 }
@@ -268,6 +272,26 @@ div.container.content p.subtitle {
   font-family: 'Proxima Nova', Sans-Serif !important;
   font-size: 20px;
   margin-bottom: 60px;
+}
+div.container.content div.content-header {
+  padding-bottom: 30px;
+}
+div.container.content div.content-header h1 {
+  margin: 0 !important;
+}
+div.container.content p {
+  font-family: 'Proxima Nova', Sans-Serif !important;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+div.container.content p:last-child {
+  margin-bottom: 0;
+}
+div.container.content div.details {
+  margin-bottom: 60px;
+}
+div.container.content div.details:last-child {
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   div.container.content {
@@ -279,6 +303,9 @@ div.container.content p.subtitle {
   div.container.content p.subtitle {
     font-size: 16px;
     margin-bottom: 30px;
+  }
+  div.container.content > p {
+    font-size: 14px;
   }
 }
 div.parallax-window {
@@ -314,6 +341,44 @@ div.categories div.card div.title {
   font-weight: bold;
   font-family: 'alwaysForever', Sans-Serif;
 }
+div.categories div.transp {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+div.categories div.transp div.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+div.categories div.transp div.icon.round {
+  height: 120px;
+  width: 120px;
+  background-color: #323232;
+  background-size: initial;
+  background-position: center;
+  margin: 0 auto 20px auto;
+}
+div.categories div.transp div.icon.round.affordable {
+  background-image: url("resources/images/affordable.png");
+}
+div.categories div.transp div.icon.round.fast-delivery {
+  background-image: url("resources/images/fast-delivery.png");
+}
+div.categories div.transp div.icon.round.creative {
+  background-image: url("resources/images/creative.png");
+}
+div.categories div.transp div.icon.round.quality-equipments {
+  background-image: url("resources/images/quality-equipments.png");
+}
+div.categories div.transp div.icon.round.finance-economic {
+  background-image: url("../images/landing-page/finance-economic.png");
+}
+div.categories div.transp div.title {
+  color: #e93d3d;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 div.categories p {
   font-size: 18px;
   font-family: 'Proxima Nova', Sans-Serif !important;
@@ -333,6 +398,9 @@ div.categories p a:visited:hover {
     margin-right: 0;
     margin-left: 0;
   }
+  div.categories > div {
+    padding: 0 !important;
+  }
   div.categories div.card {
     margin-bottom: 15px;
   }
@@ -343,11 +411,14 @@ div.categories p a:visited:hover {
     font-size: 14px !important;
     margin-bottom: 0;
   }
+  div.categories div.transp {
+    margin-top: 0;
+  }
 }
 /* End of Cards */
 /* Demo Reel */
 .demoreel {
-  padding: 20px;
+  padding: 10px;
   background: white;
 }
 @media (max-width: 992px) {
