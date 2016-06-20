@@ -261,17 +261,24 @@ div.header-navigation div.navbar-collapse ul.navbar-nav li a:hover {
 div.container.content {
   padding: 120px 20px 120px 20px;
 }
+div.container.content .centered {
+  text-align: center;
+}
 div.container.content h1 {
   margin: 0 0 10px 0 !important;
-  font-size: 36px;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Proxima Nova', Sans-Serif !important;
 }
 div.container.content p.subtitle {
   font-family: 'Proxima Nova', Sans-Serif !important;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 60px;
+  color: #777;
+}
+div.container.content p.subtitle.white {
+  color: white;
 }
 div.container.content div.content-header {
   padding-bottom: 30px;
@@ -279,9 +286,14 @@ div.container.content div.content-header {
 div.container.content div.content-header h1 {
   margin: 0 !important;
 }
+div.container.content div.content-header hr {
+  border-color: #e93d3d;
+  border-width: 3px;
+  max-width: 50px;
+}
 div.container.content p {
   font-family: 'Proxima Nova', Sans-Serif !important;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 div.container.content p:last-child {
@@ -292,6 +304,40 @@ div.container.content div.details {
 }
 div.container.content div.details:last-child {
   margin-bottom: 0;
+}
+div.container.content.contacts h1 {
+  text-transform: uppercase;
+}
+div.container.content.contacts div.info {
+  padding: 15px;
+  background: rgba(46, 46, 46, 0.6);
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 30px auto 0 auto;
+  font-family: 'Proxima Nova', Sans-Serif !important;
+}
+div.container.content.contacts div.info.mobile {
+  max-width: 300px;
+}
+div.container.content.contacts div.info.email {
+  max-width: 420px;
+}
+div.container.content.contacts div.details {
+  margin-bottom: 30px;
+}
+div.container.content.contacts div.details h1 {
+  margin: 0 !important;
+}
+div.container.content.contacts div.details:last-child {
+  margin-bottom: 0;
+}
+div.container.content.contacts span.between {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Proxima Nova', Sans-Serif !important;
 }
 @media (max-width: 767px) {
   div.container.content {
@@ -304,8 +350,21 @@ div.container.content div.details:last-child {
     font-size: 16px;
     margin-bottom: 30px;
   }
-  div.container.content > p {
+  div.container.content p {
     font-size: 14px;
+  }
+  div.container.content.contacts div.details {
+    margin-bottom: 20px;
+  }
+  div.container.content.contacts div.details:last-child {
+    margin-bottom: 0;
+  }
+  div.container.content.contacts div.info {
+    font-size: 24px;
+    padding: 10px;
+  }
+  div.container.content.contacts span.between {
+    font-size: 18px;
   }
 }
 div.parallax-window {
@@ -316,10 +375,14 @@ div.parallax-window div.content h1,
 div.parallax-window div.content p {
   color: white;
 }
+div.parallax-window.contacts {
+  background: rgba(129, 129, 129, 0.5);
+}
 /* End of Container */
 /* Cards */
 div.categories > div {
   margin-bottom: 30px;
+  padding: 10px;
 }
 div.categories div.card {
   background: white;
@@ -338,8 +401,44 @@ div.categories div.card div.title {
   text-align: center;
   padding: 10px 0 0 0;
   font-size: 40px;
-  font-weight: bold;
+  color: #777;
   font-family: 'alwaysForever', Sans-Serif;
+}
+div.categories.testimonials div.testimonial {
+  padding: 20px;
+}
+div.categories.testimonials div.testimonial div.name {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+div.categories.testimonials div.testimonial div.position {
+  font-size: 14px;
+  color: #818181;
+  margin-bottom: 20px;
+}
+div.categories.testimonials div.testimonial div.message p {
+  font-size: 18px;
+}
+div.categories.testimonials div.icon.people {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+}
+div.categories.testimonials div.icon.people.client-1 {
+  background-image: url("resources/images/clients/client-1.jpg");
+}
+div.categories.testimonials div.icon.people.client-2 {
+  background-image: url("resources/images/clients/client-2.jpg");
+}
+div.categories.testimonials div.icon.people.client-3 {
+  background-image: url("resources/images/clients/client-3.jpg");
+}
+div.categories.testimonials div.icon.people.client-4 {
+  background-image: url("resources/images/clients/client-4.jpg");
 }
 div.categories div.transp {
   margin-top: 20px;
@@ -377,7 +476,7 @@ div.categories div.transp div.title {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 div.categories p {
   font-size: 18px;

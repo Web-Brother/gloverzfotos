@@ -298,17 +298,25 @@ div.container {
 	&.content {
 		padding: 120px 20px 120px 20px;
 
+		.centered {
+			text-align: center;
+		}
+
 		h1 {
 			margin: 0 0 10px 0 !important;
-			font-size: 36px;
+			font-size: 30px;
 			text-transform: uppercase;
 			font-weight: bold;
 			font-family: 'Proxima Nova', Sans-Serif !important;
 		}
 		p.subtitle {
 			font-family: 'Proxima Nova', Sans-Serif !important;
-			font-size: 20px;
+			font-size: 18px;
 			margin-bottom: 60px;
+			color: #777;
+			&.white {
+				color: white;
+			}
 		}
 
 		div.content-header {
@@ -316,11 +324,16 @@ div.container {
 			h1 {
 				margin: 0 !important;
 			}
+			hr {
+				border-color: @secondary-color;
+    			border-width: 3px;
+    			max-width: 50px;
+			}
 		}
 
 		p {
 			font-family: 'Proxima Nova', Sans-Serif !important;
-			font-size: 18px;
+			font-size: 16px;
 			margin-bottom: 30px;
 			&:last-child {
 				margin-bottom: 0;
@@ -331,6 +344,42 @@ div.container {
 			margin-bottom: 60px;
 			&:last-child {
 				margin-bottom: 0;
+			}
+		}
+		&.contacts {
+			h1 {
+				text-transform: uppercase;
+			}
+			div.info {
+				padding: 15px;
+				background: rgba(46, 46, 46, 0.6);
+				border-radius: 5px;
+				color: white;
+				font-weight: bold;
+				font-size: 30px;
+    			margin: 30px auto 0 auto;
+    			font-family: 'Proxima Nova', Sans-Serif !important;
+    			&.mobile {
+    				max-width: 300px;
+    			}
+    			&.email {
+    				max-width: 420px;
+    			}
+			}
+			div.details {
+				h1 {
+					margin: 0 !important;
+				}
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			span.between {
+				font-size: 24px;
+				font-weight: bold;
+				color: white;
+				font-family: 'Proxima Nova', Sans-Serif !important;
 			}
 		}
 	}
@@ -345,8 +394,23 @@ div.container {
 				font-size: 16px;
 				margin-bottom: 30px;
 			}
-			> p {
+			p {
 				font-size: 14px;
+			}
+			&.contacts {
+				div.details {
+					margin-bottom: 20px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+				div.info {
+					font-size: 24px;
+					padding: 10px;
+				}
+				span.between {
+					font-size: 18px;
+				}
 			}
 		}
 	}
@@ -361,6 +425,10 @@ div.parallax-window {
     		color: white;
     	}
     }
+
+    &.contacts {
+    	background: rgba(129, 129, 129, 0.5);
+    }
 }
 
 /* End of Container */
@@ -369,6 +437,7 @@ div.parallax-window {
 div.categories {
 	> div {
 		margin-bottom: 30px;
+		padding: 10px;
 	}
 
 	div.card {
@@ -387,11 +456,52 @@ div.categories {
 	    	text-align: center;
 		    padding: 10px 0 0 0;
 		    font-size: 40px;
-    		font-weight: bold;
+    		color: #777;
 		    font-family: 'alwaysForever', Sans-Serif;
 	    }
 	}
-
+	&.testimonials {
+		div.testimonial {
+			padding: 20px;
+			div.name {
+				font-size: 18px;
+				margin-bottom: 2px;
+			}
+			div.position {
+				font-size: 14px;
+				color: #818181;
+				margin-bottom: 20px;
+			}
+			div.message {
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+		div.icon {
+			&.people {
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 80px;
+				height: 80px;
+				margin: auto;
+				margin-bottom: 20px;
+				border: 1px solid #cccccc;
+				&.client-1 {
+					background-image: url("resources/images/clients/client-1.jpg");
+				}
+				&.client-2 {
+					background-image: url("resources/images/clients/client-2.jpg");
+				}
+				&.client-3 {
+					background-image: url("resources/images/clients/client-3.jpg");
+				}
+				&.client-4 {
+					background-image: url("resources/images/clients/client-4.jpg");
+				}
+			}
+		}
+	}
 	div.transp {
 		margin-top: 20px;
 		padding: 0 20px;
@@ -427,7 +537,7 @@ div.categories {
 			text-transform: uppercase;
 			font-weight: bold;
 			font-size: 18px;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 	}
 
