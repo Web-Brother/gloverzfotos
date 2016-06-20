@@ -124,7 +124,9 @@
 				<div class="name">Sophia Valdez</div>
 				<div class="position">Wedding Coordinator</div>
 				<div class="message">
+					<img class="quote one" src="<?php bloginfo('template_directory'); ?>/resources/images/quote-1.png"/>
 					<p>Aenean imperdiet, orci sed mollis tempor, dolor est condimentum ex, sed mollis lectus erat quis tortor. Aenean dignissim nulla vitae.</p>
+					<img class="quote two" src="<?php bloginfo('template_directory'); ?>/resources/images/quote-2.png"/>
 				</div>
 			</div>
 		</div>
@@ -134,7 +136,9 @@
 				<div class="name">James Belda</div>
 				<div class="position">Groom</div>
 				<div class="message">
+					<img class="quote one" src="<?php bloginfo('template_directory'); ?>/resources/images/quote-1.png"/>
 					<p>Aenean imperdiet, orci sed mollis tempor, dolor est condimentum ex, sed mollis lectus erat quis tortor. Aenean dignissim nulla vitae.</p>
+					<img class="quote two" src="<?php bloginfo('template_directory'); ?>/resources/images/quote-2.png"/>
 				</div>
 			</div>
 		</div>
@@ -144,7 +148,9 @@
 				<div class="name">Roberto Diaz</div>
 				<div class="position">Marketing Manager</div>
 				<div class="message">
+					<img class="quote one" src="<?php bloginfo('template_directory'); ?>/resources/images/quote-1.png"/>
 					<p>Aenean imperdiet, orci sed mollis tempor, dolor est condimentum ex, sed mollis lectus erat quis tortor. Aenean dignissim nulla vitae.</p>
+					<img class="quote two" src="<?php bloginfo('template_directory'); ?>/resources/images/quote-2.png"/>
 				</div>
 			</div>
 		</div>
@@ -154,7 +160,9 @@
 				<div class="name">Judy Hopps</div>
 				<div class="position">Debutant</div>
 				<div class="message">
+					<img class="quote one" src="<?php bloginfo('template_directory'); ?>/resources/images/quote-1.png"/>
 					<p>Aenean imperdiet, orci sed mollis tempor, dolor est condimentum ex, sed mollis lectus erat quis tortor. Aenean dignissim nulla vitae.</p>
+					<img class="quote two" src="<?php bloginfo('template_directory'); ?>/resources/images/quote-2.png"/>
 				</div>
 			</div>
 		</div>
